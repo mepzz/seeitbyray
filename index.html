@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ray’s See It Home Design | North Bay</title>
+  <meta name="description" content="Carpentry, Renovations & Repairs in North Bay & surrounding area. Call 613-277-1422." />
+  <style>
+    :root{
+      --green:#2f5a3a;
+      --dark:#1f2a33;
+      --light:#f7f7f7;
+      --border:#e6e6e6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--dark);
+      background:white;
+      line-height:1.5;
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+      padding:18px 0;
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:62px;width:auto}
+    .brand h1{font-size:20px;margin:0}
+    .brand p{margin:2px 0 0;color:#4b5563;font-size:14px}
+    .cta a{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      border:1px solid var(--border);
+      margin-left:8px;
+      font-weight:600;
+      color:var(--dark);
+    }
+    .cta a.primary{
+      background:var(--green);
+      color:white;
+      border-color:var(--green);
+    }
+    .hero{
+      background:linear-gradient(180deg, var(--light), white);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:26px;
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap:22px;
+    }
+    .hero h2{margin:0 0 10px;font-size:34px;line-height:1.15}
+    .hero .sub{margin:0 0 16px;color:#374151;font-size:16px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .badge{
+      font-size:13px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:white;
+    }
+    .card{
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      background:white;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+      margin-top:18px;
+    }
+    .grid .card h3{margin:0 0 6px}
+    .grid .card p{margin:0;color:#4b5563;font-size:14px}
+    .section{margin-top:22px}
+    .section h3{margin:0 0 10px;font-size:20px}
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+    }
+    .ph{
+      aspect-ratio: 4 / 3;
+      border-radius:14px;
+      border:1px dashed #cbd5e1;
+      background: #f8fafc;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#64748b;
+      font-size:13px;
+      text-align:center;
+      padding:10px;
+    }
+    footer{
+      margin-top:28px;
+      padding:18px 0;
+      border-top:1px solid var(--border);
+      color:#6b7280;
+      font-size:14px;
+    }
+    .contact{
+      display:flex;flex-wrap:wrap;gap:12px;align-items:center;
+    }
+    .contact a{color:var(--green);font-weight:700;text-decoration:none}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr}
+      .cta a{margin-left:0;margin-top:8px}
+      header{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- Replace logo.png with your actual logo filename -->
+        <img src="logo.png" alt="Ray’s See It Home Design logo" onerror="this.style.display='none'">
+        <div>
+          <h1>Ray’s See It Home Design</h1>
+          <p>Carpentry, Renovations & Repairs — North Bay & Surrounding Area</p>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="primary" href="tel:6132771422">Call: 613-277-1422</a>
+        <a href="mailto:rmoreilly849@gmail.com">Email</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h2>Quality work that’s built right and finished clean.</h2>
+          <p class="sub">
+            From decks and stairs to framing, flooring, and interior renovations — dependable craftsmanship
+            you can trust.
+          </p>
+
+          <div class="badges">
+            <span class="badge">Finish Carpentry</span>
+            <span class="badge">Stairs & Decks</span>
+            <span class="badge">Framing</span>
+            <span class="badge">Flooring</span>
+            <span class="badge">Drywall</span>
+            <span class="badge">Repairs</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 10px;">Get a quote</h3>
+          <p style="margin:0 0 12px;color:#4b5563;">
+            Tell us what you need and we’ll get back to you.
+          </p>
+          <p style="margin:0 0 10px;"><strong>Phone:</strong> <a href="tel:6132771422" style="color:var(--green);text-decoration:none;font-weight:800;">613-277-1422</a></p>
+          <p style="margin:0 0 10px;"><strong>Email:</strong> <a href="mailto:rmoreilly849@gmail.com" style="color:var(--green);text-decoration:none;font-weight:800;">rmoreilly849@gmail.com</a></p>
+          <p style="margin:0;"><strong>Service area:</strong> North Bay & surrounding area</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Services</h3>
+        <div class="grid">
+          <div class="card">
+            <h3>Carpentry</h3>
+            <p>Stairs, decks, framing, trim, and custom woodwork with strong structure and clean finishes.</p>
+          </div>
+          <div class="card">
+            <h3>Renovations</h3>
+            <p>Interior updates, layout changes, flooring installs, and full refreshes from start to finish.</p>
+          </div>
+          <div class="card">
+            <h3>Repairs</h3>
+            <p>Fixes and improvements that restore safety, function, and appearance — done properly.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Recent work</h3>
+        <p style="margin-top:-6px;color:#4b5563;">Add photos here as you go — this section will look great on mobile and desktop.</p>
+        <div class="gallery">
+          <div class="ph">Replace with a deck/stairs photo</div>
+          <div class="ph">Replace with an interior renovation photo</div>
+          <div class="ph">Replace with framing / in-progress photo</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <span><strong>Ray’s See It Home Design</strong></span>
+        <span>•</span>
+        <span>North Bay & surrounding area</span>
+        <span>•</span>
+        <a href="tel:6132771422">613-277-1422</a>
+        <span>•</span>
+        <a href="mailto:rmoreilly849@gmail.com">rmoreilly849@gmail.com</a>
+      </div>
+      <div style="margin-top:10px;">© <span id="y"></span> Ray’s See It Home Design</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
